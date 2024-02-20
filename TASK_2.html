@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Design Stopwatch using HTML CSS and JavaScript</title> 
+    <link rel="stylesheet" href="style.css"> 
+<style>
+body { 
+    padding: 0; 
+    margin: 0; 
+    font-family: verdana; 
+    
+} 
+  
+.container { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100vh; 
+    background:url("https://t3.ftcdn.net/jpg/02/90/89/76/360_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg");
+background-size:100%;
+} 
+  
+h1 { 
+    color: rgb(10, 238, 10); 
+    text-align: center; 
+} 
+  
+.digit { 
+    font-size: 150px; 
+    color:grey; 
+} 
+  
+.txt { 
+    font-size: 30px; 
+    color: red; 
+} 
+  
+#buttons { 
+    margin-top: 50px; 
+} 
+  
+.btn { 
+    width: 100px; 
+    padding: 10px 15px; 
+    margin: 0px 20px; 
+    border-top-right-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 4px; 
+    border-top-left-radius: 4px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    transition: 0.5s; 
+    color: white; 
+    font-weight: 500; 
+} 
+  
+#start { 
+    background-color: red; 
+} 
+  
+#stop { 
+    background-color: gold; 
+} 
+  
+#reset { 
+    background-color: green; 
+}
+</style>
+</head> 
+  
+<body> 
+    <div class="container"> 
+        <h1><marquee>Digital Stop Watch </marquee></h1>
+        <div id="time"> 
+            <span class="digit" id="hr"> 
+                00</span> 
+            <span class="txt">Hr</span> 
+            <span class="digit" id="min"> 
+                00</span> 
+            <span class="txt">Min</span> 
+            <span class="digit" id="sec"> 
+                00</span> 
+            <span class="txt">Sec</span> 
+            <span class="digit" id="count"> 
+                00</span> 
+        </div> 
+        <div id="buttons"> 
+            <button class="btn" id="start"> 
+                Start</button> 
+ <button class="btn" id="reset"> 
+                Reset</button>
+            <button class="btn" id="stop"> 
+                Stop</button> 
+            
+        </div> 
+    </div> 
+  
+    <script src="Sscript.js"></script> 
+
+</body> 
